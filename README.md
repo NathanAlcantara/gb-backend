@@ -1,6 +1,7 @@
 # Glamm Boutique - Backend
 
 This project is a backend of a e-commerce;
+Frontend can be found here https://github.com/NathanAlcantara/gb-frontend
 
 ## Development server
 
