@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "sourceMap": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": true,
+        "strictNullChecks": false,
+        "baseUrl": ".",
+        "paths": {
+            "~types/*": ["src/graphql/types/*"]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
