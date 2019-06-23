@@ -1,13 +1,12 @@
 import aws = require('aws-sdk');
 import multer = require('multer');
 import multerS3 = require('multer-s3');
-
 import {
 	AWS_SECRET_ACCESS_KEY,
 	AWS_ACCESS_KEY,
 	AWS_REGION,
 	AWS_BUCKET_PHOTOS
-} from './../core/constants';
+} from '../core/constants';
 
 aws.config.update({
 	secretAccessKey: AWS_SECRET_ACCESS_KEY,

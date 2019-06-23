@@ -4,7 +4,7 @@ import {
 	AWS_ACCESS_KEY,
 	AWS_REGION,
 	AWS_BUCKET_PHOTOS
-} from './../core/constants';
+} from '../core/constants';
 
 aws.config.update({
 	secretAccessKey: AWS_SECRET_ACCESS_KEY,

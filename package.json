@@ -9,7 +9,7 @@
   },
   "main": "dist/server.js",
   "scripts": {
-    "start": "nodemon --watch \"src/\" --exec \"ts-node -r dotenv/config src/server.ts\" -e ts",
+    "start": "nodemon --watch \"src/\" --exec \"ts-node -r dotenv/config src/server.ts dotenv_config_path=./../.env\" -e ts",
     "start:prod": "yarn clean && yarn build && PROD=true nodenv --env ./../.env .",
     "lint": "eslint ./src/**/*.{js,ts,tsx} --fix",
     "build": "yarn lint && tsc",

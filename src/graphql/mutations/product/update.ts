@@ -22,8 +22,8 @@ const updateProduct = {
 		paymentType: {type: new GraphQLNonNull(new GraphQLList(new GraphQLNonNull(GraphQLString)))},
 		numberOfParcels: {type: GraphQLInt},
 		valueOfParcel: {type: new GraphQLNonNull(GraphQLFloat)},
-		colors: { type: new GraphQLNonNull(new GraphQLList(new GraphQLNonNull(GraphQLString))) },
-		sizes: { type: new GraphQLNonNull(new GraphQLList(new GraphQLNonNull(GraphQLString))) },
+		colors: {type: new GraphQLNonNull(new GraphQLList(new GraphQLNonNull(GraphQLString)))},
+		sizes: {type: new GraphQLList(GraphQLString)},
 	},
 	resolve(root, params) {
 		const updateProduct = Product.findByIdAndUpdate(

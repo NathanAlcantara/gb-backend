@@ -22,7 +22,7 @@ const addProduct = {
 		numberOfParcels: { type: GraphQLInt },
 		valueOfParcel: { type: new GraphQLNonNull(GraphQLFloat) },
 		colors: { type: new GraphQLNonNull(new GraphQLList(new GraphQLNonNull(GraphQLString))) },
-		sizes: { type: new GraphQLNonNull(new GraphQLList(new GraphQLNonNull(GraphQLString))) },
+		sizes: { type: new GraphQLList(GraphQLString) },
 	},
 	resolve: (root, params) => {
 		const newProduct = new Product(params).save();
