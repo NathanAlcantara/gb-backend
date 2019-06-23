@@ -1,11 +1,11 @@
-import { GraphQLSchema } from 'graphql';
+import typeDefs from "./gb.sdl";
+import resolvers from "./resolvers/main";
 
-import Queries from './queries/queries';
-import Mutations from './mutations/mutations';
+import { makeExecutableSchema } from 'graphql-tools';
 
-const Schema = new GraphQLSchema({
-	query: Queries,
-	mutation: Mutations
+const Schema = makeExecutableSchema({
+	typeDefs,
+	resolvers,
 });
 
 export default Schema;
