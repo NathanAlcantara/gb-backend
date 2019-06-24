@@ -1,6 +1,7 @@
 const schemaDefinitionLanguage = `
 	type Query{
 		allProducts(pagination:PageableInput) : [Product]
+		countAllProducts: Int
 		oneProduct(id:ID!) : Product
 	}
 	

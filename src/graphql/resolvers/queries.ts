@@ -12,6 +12,9 @@ const queries = {
 
 			return query.exec();
 		},
+		countAllProducts: () => {
+			return Product.find().orFail(new Error('Não foi possível encontrar nenhum produto')).estimatedDocumentCount().exec();
+		},
 		oneProduct: (_, { id }) => {
 			return Product.findById(id).exec().then(productDetails => {
 				if (!productDetails) {
