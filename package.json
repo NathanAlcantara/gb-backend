@@ -16,7 +16,7 @@
     "clean": "rm -rf dist/"
   },
   "dependencies": {
-    "aws-sdk": "^2.441.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^3.0.6",
     "bluebird": "^3.5.4",
     "connect-mongo": "^2.0.3",
